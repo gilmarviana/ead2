@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "897496958677",
+    "project_id": "euvendo-99066",
+    "storage_bucket": "euvendo-99066.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897496958677:android:f57d02f7ff3852db0d445c",
+        "android_client_info": {
+          "package_name": "com.flutterflow.euvendo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlx2fw-ml3IUnUr6SmtlDggCuCAqvL244"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
