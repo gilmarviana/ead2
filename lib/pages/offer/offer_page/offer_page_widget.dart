@@ -2,9 +2,7 @@ import '/backend/api_requests/api_calls.dart';
 import '/components/is_sold_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'offer_page_model.dart';
@@ -61,7 +59,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -69,7 +67,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -144,7 +142,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 16.0, 28.0, 12.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -195,7 +193,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       5.0,
                                                                       0.0,
@@ -224,7 +222,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 16.0, 28.0, 12.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -232,7 +230,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 2.0, 0.0, 0.0),
                                                 child: Icon(
@@ -244,7 +242,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         4.0, 4.0, 0.0, 0.0),
                                                 child: Text(
@@ -270,7 +268,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 0.0, 28.0, 16.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -310,9 +308,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                     .results(
                                                               columnGetOffersAllResponse
                                                                   .jsonBody,
-                                                            )!
-                                                                .length >
-                                                            0)
+                                                            )!.isNotEmpty)
                                                           Text(
                                                             GetOffersAllCall
                                                                     .lojaID(
@@ -345,7 +341,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -389,7 +385,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 0.0, 28.0, 16.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -429,9 +425,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                     .results(
                                                               columnGetOffersAllResponse
                                                                   .jsonBody,
-                                                            )!
-                                                                .length >
-                                                            0)
+                                                            )!.isNotEmpty)
                                                           Text(
                                                             valueOrDefault<
                                                                 String>(
@@ -463,7 +457,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -507,7 +501,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 0.0, 28.0, 16.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -547,9 +541,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                     .results(
                                                               columnGetOffersAllResponse
                                                                   .jsonBody,
-                                                            )!
-                                                                .length >
-                                                            0)
+                                                            )!.isNotEmpty)
                                                           Text(
                                                             valueOrDefault<
                                                                 String>(
@@ -581,7 +573,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -625,7 +617,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   28.0, 0.0, 28.0, 16.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -694,7 +686,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -738,7 +730,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 180.0),
                                           child: Builder(
                                             builder: (context) {
@@ -793,7 +785,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                 ).toString())),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   28.0,
                                                                   12.0,
@@ -860,7 +852,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
                                                                           borderRadius:
-                                                                              BorderRadius.only(
+                                                                              const BorderRadius.only(
                                                                             bottomLeft:
                                                                                 Radius.circular(16.0),
                                                                             bottomRight:
@@ -874,7 +866,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                         child:
                                                                             ClipRRect(
                                                                           borderRadius:
-                                                                              BorderRadius.only(
+                                                                              const BorderRadius.only(
                                                                             bottomLeft:
                                                                                 Radius.circular(16.0),
                                                                             bottomRight:
@@ -886,10 +878,10 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                           ),
                                                                           child:
                                                                               Image.network(
-                                                                            '${getJsonField(
+                                                                            getJsonField(
                                                                               resultsItem,
                                                                               r'''$.imagePNG''',
-                                                                            ).toString()}',
+                                                                            ).toString(),
                                                                             width:
                                                                                 100.0,
                                                                             height:
@@ -926,7 +918,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                     children: [
                                                                                       Expanded(
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                                                                                           child: SingleChildScrollView(
                                                                                             scrollDirection: Axis.horizontal,
                                                                                             child: Row(
@@ -975,7 +967,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                     children: [
                                                                                       Expanded(
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.end,
@@ -1012,7 +1004,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                                             onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                                                             child: Padding(
                                                                                                               padding: MediaQuery.viewInsetsOf(context),
-                                                                                                              child: IsSoldWidget(),
+                                                                                                              child: const IsSoldWidget(),
                                                                                                             ),
                                                                                                           ),
                                                                                                         );
@@ -1031,13 +1023,13 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                       ),
                                                                                       Expanded(
                                                                                         child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                                                                                           child: Row(
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             mainAxisAlignment: MainAxisAlignment.end,
                                                                                             children: [
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                                                                                                 child: Text(
                                                                                                   getJsonField(
                                                                                                     resultsItem,
@@ -1084,7 +1076,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                         context.pushNamed(
                                                                                           'discountPage',
                                                                                           extra: <String, dynamic>{
-                                                                                            kTransitionInfoKey: TransitionInfo(
+                                                                                            kTransitionInfoKey: const TransitionInfo(
                                                                                               hasTransition: true,
                                                                                               transitionType: PageTransitionType.fade,
                                                                                               duration: Duration(milliseconds: 0),
@@ -1096,7 +1088,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                         height: 30.0,
                                                                                         decoration: BoxDecoration(
                                                                                           color: FlutterFlowTheme.of(context).tertiary,
-                                                                                          borderRadius: BorderRadius.only(
+                                                                                          borderRadius: const BorderRadius.only(
                                                                                             bottomLeft: Radius.circular(12.0),
                                                                                             bottomRight: Radius.circular(12.0),
                                                                                             topLeft: Radius.circular(16.0),
@@ -1144,7 +1136,7 @@ class _OfferPageWidgetState extends State<OfferPageWidget> {
                                                                                         height: 30.0,
                                                                                         decoration: BoxDecoration(
                                                                                           color: FlutterFlowTheme.of(context).secondary,
-                                                                                          borderRadius: BorderRadius.only(
+                                                                                          borderRadius: const BorderRadius.only(
                                                                                             bottomLeft: Radius.circular(12.0),
                                                                                             bottomRight: Radius.circular(12.0),
                                                                                             topLeft: Radius.circular(16.0),

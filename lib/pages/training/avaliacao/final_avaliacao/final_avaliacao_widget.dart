@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'final_avaliacao_model.dart';
 export 'final_avaliacao_model.dart';
@@ -61,7 +60,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -69,7 +68,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -143,14 +142,14 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           22.0, 22.0, 22.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -177,7 +176,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                                         mainAxisSize:
                                                             MainAxisSize.max,
                                                         children: [
-                                                          FaIcon(
+                                                          const FaIcon(
                                                             FontAwesomeIcons
                                                                 .crown,
                                                             color: Color(
@@ -211,7 +210,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                                         mainAxisSize:
                                                             MainAxisSize.max,
                                                         children: [
-                                                          FaIcon(
+                                                          const FaIcon(
                                                             FontAwesomeIcons
                                                                 .sadTear,
                                                             color: Color(
@@ -248,7 +247,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 22.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -285,7 +284,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           22.0, 0.0, 22.0, 42.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -294,14 +293,11 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 5.0, 0.0, 0.0),
                                                 child: FFButtonWidget(
                                                   onPressed: (FFAppState()
-                                                                  .alternativaSelecionada ==
-                                                              null ||
-                                                          FFAppState()
                                                                   .alternativaSelecionada ==
                                                               '')
                                                       ? null
@@ -362,9 +358,9 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                                     width: double.infinity,
                                                     height: 50.0,
                                                     padding:
-                                                        EdgeInsets.all(0.0),
+                                                        const EdgeInsets.all(0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -379,7 +375,7 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -387,9 +383,9 @@ class _FinalAvaliacaoWidgetState extends State<FinalAvaliacaoWidget> {
                                                         BorderRadius.circular(
                                                             8.0),
                                                     disabledColor:
-                                                        Color(0xFF8365E0),
+                                                        const Color(0xFF8365E0),
                                                     disabledTextColor:
-                                                        Color(0x7AFFFFFF),
+                                                        const Color(0x7AFFFFFF),
                                                   ),
                                                 ),
                                               ),

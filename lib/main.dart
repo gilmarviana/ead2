@@ -1,5 +1,4 @@
 import 'package:provider/provider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -7,9 +6,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'backend/firebase/firebase_config.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
-import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
 
 void main() async {
@@ -23,11 +20,13 @@ void main() async {
 
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   State<MyApp> createState() => _MyAppState();
@@ -51,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     _appStateNotifier = AppStateNotifier.instance;
     _router = createRouter(_appStateNotifier);
 
-    Future.delayed(Duration(milliseconds: 1000),
+    Future.delayed(const Duration(milliseconds: 1000),
         () => setState(() => _appStateNotifier.stopShowingSplashImage()));
   }
 
@@ -63,7 +62,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Plataforma EAD Teste',
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -80,7 +79,7 @@ class _MyAppState extends State<MyApp> {
 }
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({Key? key, this.initialPage, this.page}) : super(key: key);
+  const NavBarPage({super.key, this.initialPage, this.page});
 
   final String? initialPage;
   final Widget? page;
@@ -104,10 +103,10 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'homePage': HomePageWidget(),
-      'trainingPage': TrainingPageWidget(),
-      'offerPage': OfferPageWidget(),
-      'profilePage': ProfilePageWidget(),
+      'homePage': const HomePageWidget(),
+      'trainingPage': const TrainingPageWidget(),
+      'offerPage': const OfferPageWidget(),
+      'profilePage': const ProfilePageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -133,12 +132,12 @@ class _NavBarPageState extends State<NavBarPage> {
           }),
           backgroundColor: Colors.white,
           selectedItemColor: FlutterFlowTheme.of(context).secondary,
-          unselectedItemColor: Color(0xFFBBB9B9),
-          selectedBackgroundColor: Color(0x00000000),
+          unselectedItemColor: const Color(0xFFBBB9B9),
+          selectedBackgroundColor: const Color(0x00000000),
           borderRadius: 8.0,
           itemBorderRadius: 8.0,
-          margin: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          margin: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
           width: double.infinity,
           elevation: 8.0,
           items: [
@@ -150,7 +149,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     Icons.home_outlined,
                     color: currentIndex == 0
                         ? FlutterFlowTheme.of(context).secondary
-                        : Color(0xFFBBB9B9),
+                        : const Color(0xFFBBB9B9),
                     size: 24.0,
                   ),
                   Text(
@@ -159,7 +158,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     style: TextStyle(
                       color: currentIndex == 0
                           ? FlutterFlowTheme.of(context).secondary
-                          : Color(0xFFBBB9B9),
+                          : const Color(0xFFBBB9B9),
                       fontSize: 11.0,
                     ),
                   ),
@@ -174,7 +173,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     Icons.ondemand_video_sharp,
                     color: currentIndex == 1
                         ? FlutterFlowTheme.of(context).secondary
-                        : Color(0xFFBBB9B9),
+                        : const Color(0xFFBBB9B9),
                     size: 24.0,
                   ),
                   Text(
@@ -183,7 +182,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     style: TextStyle(
                       color: currentIndex == 1
                           ? FlutterFlowTheme.of(context).secondary
-                          : Color(0xFFBBB9B9),
+                          : const Color(0xFFBBB9B9),
                       fontSize: 11.0,
                     ),
                   ),
@@ -198,7 +197,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     Icons.attach_money_outlined,
                     color: currentIndex == 2
                         ? FlutterFlowTheme.of(context).secondary
-                        : Color(0xFFBBB9B9),
+                        : const Color(0xFFBBB9B9),
                     size: 24.0,
                   ),
                   Text(
@@ -207,7 +206,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     style: TextStyle(
                       color: currentIndex == 2
                           ? FlutterFlowTheme.of(context).secondary
-                          : Color(0xFFBBB9B9),
+                          : const Color(0xFFBBB9B9),
                       fontSize: 11.0,
                     ),
                   ),
@@ -222,7 +221,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     Icons.person_outline_outlined,
                     color: currentIndex == 3
                         ? FlutterFlowTheme.of(context).secondary
-                        : Color(0xFFBBB9B9),
+                        : const Color(0xFFBBB9B9),
                     size: 24.0,
                   ),
                   Text(
@@ -231,7 +230,7 @@ class _NavBarPageState extends State<NavBarPage> {
                     style: TextStyle(
                       color: currentIndex == 3
                           ? FlutterFlowTheme.of(context).secondary
-                          : Color(0xFFBBB9B9),
+                          : const Color(0xFFBBB9B9),
                       fontSize: 11.0,
                     ),
                   ),

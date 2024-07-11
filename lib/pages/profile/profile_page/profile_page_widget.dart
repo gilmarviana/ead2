@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'profile_page_model.dart';
@@ -60,7 +59,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -68,7 +67,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -95,7 +94,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 28.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -121,18 +120,18 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 364.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
                                           0.9,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -164,7 +163,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0,
                                                                 32.0, 0.0, 8.0),
                                                     child: Row(
@@ -179,7 +178,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCACACA),
                                                                 letterSpacing:
                                                                     0.0,
@@ -200,7 +199,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -232,7 +231,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0,
                                                                 32.0, 0.0, 8.0),
                                                     child: Row(
@@ -248,7 +247,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCACACA),
                                                                 letterSpacing:
                                                                     0.0,
@@ -269,7 +268,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -301,7 +300,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0,
                                                                 32.0, 0.0, 8.0),
                                                     child: Row(
@@ -317,7 +316,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCACACA),
                                                                 letterSpacing:
                                                                     0.0,
@@ -338,7 +337,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -370,7 +369,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0,
                                                                 32.0, 0.0, 8.0),
                                                     child: Row(
@@ -385,7 +384,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFCACACA),
                                                                 letterSpacing:
                                                                     0.0,
@@ -406,7 +405,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 32.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
@@ -416,11 +415,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                               options: FFButtonOptions(
                                                 width: 250.0,
                                                 height: 60.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -434,7 +433,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -445,7 +444,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 16.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
@@ -455,11 +454,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                               options: FFButtonOptions(
                                                 width: 250.0,
                                                 height: 60.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -473,7 +472,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -484,7 +483,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 16.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
@@ -498,7 +497,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                     'loginPage',
                                                     extra: <String, dynamic>{
                                                       kTransitionInfoKey:
-                                                          TransitionInfo(
+                                                          const TransitionInfo(
                                                         hasTransition: true,
                                                         transitionType:
                                                             PageTransitionType
@@ -515,7 +514,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                         (alertDialogContext) {
                                                       return WebViewAware(
                                                         child: AlertDialog(
-                                                          title: Text('Erro!'),
+                                                          title: const Text('Erro!'),
                                                           content: Text((_model
                                                                       .apiResultowg
                                                                       ?.jsonBody ??
@@ -526,7 +525,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                               onPressed: () =>
                                                                   Navigator.pop(
                                                                       alertDialogContext),
-                                                              child: Text('Ok'),
+                                                              child: const Text('Ok'),
                                                             ),
                                                           ],
                                                         ),
@@ -541,11 +540,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                               options: FFButtonOptions(
                                                 width: 200.0,
                                                 height: 50.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -559,7 +558,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
                                                         ),
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),

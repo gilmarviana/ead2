@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'is_sold_model.dart';
@@ -47,7 +46,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
       height: 270.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).primary,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 5.0,
             color: Color(0x3B1D2429),
@@ -57,7 +56,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
             ),
           )
         ],
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -65,7 +64,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: FutureBuilder<ApiCallResponse>(
           future: BAppEuVendoGroup.getOfferByIdBCall.call(
             id: FFAppState().currentOffer,
@@ -106,12 +105,12 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                         builder: (alertDialogContext) {
                           return WebViewAware(
                             child: AlertDialog(
-                              title: Text('Tudo certo!'),
+                              title: const Text('Tudo certo!'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext),
-                                  child: Text('Ok'),
+                                  child: const Text('Ok'),
                                 ),
                               ],
                             ),
@@ -126,7 +125,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                         builder: (alertDialogContext) {
                           return WebViewAware(
                             child: AlertDialog(
-                              title: Text('Algo deu errado!'),
+                              title: const Text('Algo deu errado!'),
                               content: Text(
                                   (_model.apiResultgbk?.jsonBody ?? '')
                                       .toString()),
@@ -134,7 +133,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                                 TextButton(
                                   onPressed: () =>
                                       Navigator.pop(alertDialogContext),
-                                  child: Text('Ok'),
+                                  child: const Text('Ok'),
                                 ),
                               ],
                             ),
@@ -149,23 +148,23 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 60.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).tertiary,
                     textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
                           fontFamily: 'Poppins',
                           letterSpacing: 0.0,
                         ),
                     elevation: 2.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       _model.apiResultgbkCopy =
@@ -182,12 +181,12 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                           builder: (alertDialogContext) {
                             return WebViewAware(
                               child: AlertDialog(
-                                title: Text('Tudo certo!'),
+                                title: const Text('Tudo certo!'),
                                 actions: [
                                   TextButton(
                                     onPressed: () =>
                                         Navigator.pop(alertDialogContext),
-                                    child: Text('Ok'),
+                                    child: const Text('Ok'),
                                   ),
                                 ],
                               ),
@@ -202,7 +201,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                           builder: (alertDialogContext) {
                             return WebViewAware(
                               child: AlertDialog(
-                                title: Text('Algo deu errado!'),
+                                title: const Text('Algo deu errado!'),
                                 content: Text(
                                     (_model.apiResultgbk?.jsonBody ?? '')
                                         .toString()),
@@ -210,7 +209,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                                   TextButton(
                                     onPressed: () =>
                                         Navigator.pop(alertDialogContext),
-                                    child: Text('Ok'),
+                                    child: const Text('Ok'),
                                   ),
                                 ],
                               ),
@@ -226,9 +225,9 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                       width: double.infinity,
                       height: 60.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).alternate,
                       textStyle:
                           FlutterFlowTheme.of(context).bodyLarge.override(
@@ -236,7 +235,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                                 letterSpacing: 0.0,
                               ),
                       elevation: 2.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -244,7 +243,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pop();
@@ -254,9 +253,9 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                       width: 80.0,
                       height: 60.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
@@ -268,7 +267,7 @@ class _IsSoldWidgetState extends State<IsSoldWidget> {
                             fontWeight: FontWeight.normal,
                           ),
                       elevation: 0.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 0.0,
                       ),

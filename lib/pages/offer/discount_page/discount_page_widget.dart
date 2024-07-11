@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'discount_page_model.dart';
@@ -65,7 +64,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -73,7 +72,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -101,7 +100,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 12.0, 0.0, 174.0),
                                   child: Container(
                                     width:
@@ -148,7 +147,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 14.0),
                                                   child: Row(
@@ -161,7 +160,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                       Expanded(
                                                         child: ClipRRect(
                                                           borderRadius:
-                                                              BorderRadius.only(
+                                                              const BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     0.0),
@@ -192,7 +191,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                               ],
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Column(
@@ -202,7 +201,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -220,7 +219,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 fontSize: 14.0,
                                                                 letterSpacing:
@@ -232,7 +231,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 0.0, 14.0),
                                                     child: Row(
@@ -255,7 +254,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF333333),
                                                                 letterSpacing:
                                                                     0.0,
@@ -271,7 +270,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Column(
@@ -281,7 +280,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -299,7 +298,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 fontSize: 14.0,
                                                                 letterSpacing:
@@ -311,7 +310,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 4.0,
                                                                 0.0, 14.0),
                                                     child: Row(
@@ -335,7 +334,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF333333),
                                                                 letterSpacing:
                                                                     0.0,
@@ -359,7 +358,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -371,7 +370,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -393,7 +392,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF22272D),
                                                                       letterSpacing:
                                                                           0.0,
@@ -404,7 +403,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -425,7 +424,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'Aprovado',
                                                                   'Negado'
                                                                 ],
@@ -441,7 +440,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF22272D),
                                                                       letterSpacing:
                                                                           0.0,
@@ -455,7 +454,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     0.0,
                                                                 borderRadius:
                                                                     0.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         4.0,
@@ -476,7 +475,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -488,7 +487,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -510,7 +509,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF22272D),
                                                                       letterSpacing:
                                                                           0.0,
@@ -521,7 +520,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       12.0,
@@ -542,7 +541,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     FormFieldController<
                                                                             String>(
                                                                         null),
-                                                                options: [
+                                                                options: const [
                                                                   'Porcentagem',
                                                                   'Monetário'
                                                                 ],
@@ -558,7 +557,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0xFF22272D),
                                                                       letterSpacing:
                                                                           0.0,
@@ -572,7 +571,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                     0.0,
                                                                 borderRadius:
                                                                     0.0,
-                                                                margin: EdgeInsetsDirectional
+                                                                margin: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         12.0,
                                                                         4.0,
@@ -590,7 +589,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       8.0,
@@ -626,7 +625,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFF333333),
+                                                                              const Color(0xFF333333),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -649,7 +648,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       ),
                                                                     ),
                                                                     focusedBorder:
-                                                                        UnderlineInputBorder(
+                                                                        const UnderlineInputBorder(
                                                                       borderSide:
                                                                           BorderSide(
                                                                         color: Color(
@@ -658,7 +657,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                             1.0,
                                                                       ),
                                                                       borderRadius:
-                                                                          const BorderRadius
+                                                                          BorderRadius
                                                                               .only(
                                                                         topLeft:
                                                                             Radius.circular(4.0),
@@ -667,7 +666,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       ),
                                                                     ),
                                                                     errorBorder:
-                                                                        UnderlineInputBorder(
+                                                                        const UnderlineInputBorder(
                                                                       borderSide:
                                                                           BorderSide(
                                                                         color: Color(
@@ -676,7 +675,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                             1.0,
                                                                       ),
                                                                       borderRadius:
-                                                                          const BorderRadius
+                                                                          BorderRadius
                                                                               .only(
                                                                         topLeft:
                                                                             Radius.circular(4.0),
@@ -685,7 +684,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       ),
                                                                     ),
                                                                     focusedErrorBorder:
-                                                                        UnderlineInputBorder(
+                                                                        const UnderlineInputBorder(
                                                                       borderSide:
                                                                           BorderSide(
                                                                         color: Color(
@@ -694,7 +693,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                             1.0,
                                                                       ),
                                                                       borderRadius:
-                                                                          const BorderRadius
+                                                                          BorderRadius
                                                                               .only(
                                                                         topLeft:
                                                                             Radius.circular(4.0),
@@ -709,7 +708,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       .override(
                                                                         fontFamily:
                                                                             'Poppins',
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0xFF333333),
                                                                         letterSpacing:
                                                                             0.0,
@@ -731,7 +730,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 32.0,
                                                                 0.0, 0.0),
                                                     child: FFButtonWidget(
@@ -760,7 +759,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       .primaryText,
                                                                 ),
                                                               ),
-                                                              duration: Duration(
+                                                              duration: const Duration(
                                                                   milliseconds:
                                                                       4000),
                                                               backgroundColor:
@@ -797,16 +796,16 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               return WebViewAware(
                                                                 child:
                                                                     AlertDialog(
-                                                                  title: Text(
+                                                                  title: const Text(
                                                                       'Tudo certo!'),
-                                                                  content: Text(
+                                                                  content: const Text(
                                                                       'Informações salvas com sucesso!'),
                                                                   actions: [
                                                                     TextButton(
                                                                       onPressed:
                                                                           () =>
                                                                               Navigator.pop(alertDialogContext),
-                                                                      child: Text(
+                                                                      child: const Text(
                                                                           'Ok'),
                                                                     ),
                                                                   ],
@@ -825,7 +824,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                               return WebViewAware(
                                                                 child:
                                                                     AlertDialog(
-                                                                  title: Text(
+                                                                  title: const Text(
                                                                       'Erro!'),
                                                                   content: Text((_model
                                                                           .apiResultvo1
@@ -836,7 +835,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                       onPressed:
                                                                           () =>
                                                                               Navigator.pop(alertDialogContext),
-                                                                      child: Text(
+                                                                      child: const Text(
                                                                           'Ok'),
                                                                     ),
                                                                   ],
@@ -853,14 +852,14 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                         width: 180.0,
                                                         height: 60.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
                                                                     0.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -882,7 +881,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color: Colors
                                                               .transparent,
                                                           width: 1.0,
@@ -897,7 +896,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 12.0),
                                               child: FFButtonWidget(
@@ -909,11 +908,11 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 120.0,
                                                   height: 50.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -927,7 +926,7 @@ class _DiscountPageWidgetState extends State<DiscountPageWidget> {
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),

@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'new_offer_page_model.dart';
@@ -72,7 +70,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -80,7 +78,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -115,7 +113,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 0.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -141,7 +139,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -184,7 +182,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           32.0,
@@ -198,7 +196,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                     MainAxisAlignment
                                                                         .center,
                                                                 children: [
-                                                                  Container(
+                                                                  SizedBox(
                                                                     width: MediaQuery.sizeOf(context)
                                                                             .width *
                                                                         0.7,
@@ -222,7 +220,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                             .bodySmall
                                                                             .override(
                                                                               fontFamily: 'Poppins',
-                                                                              color: Color(0xFFCACACA),
+                                                                              color: const Color(0xFFCACACA),
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         enabledBorder:
@@ -240,7 +238,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -252,7 +250,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -264,7 +262,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -300,7 +298,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -343,7 +341,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           32.0,
@@ -357,7 +355,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                     MainAxisAlignment
                                                                         .center,
                                                                 children: [
-                                                                  Container(
+                                                                  SizedBox(
                                                                     width: MediaQuery.sizeOf(context)
                                                                             .width *
                                                                         0.7,
@@ -381,7 +379,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                             .bodySmall
                                                                             .override(
                                                                               fontFamily: 'Poppins',
-                                                                              color: Color(0xFFCACACA),
+                                                                              color: const Color(0xFFCACACA),
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         enabledBorder:
@@ -399,7 +397,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         focusedBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -411,7 +409,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         errorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -423,7 +421,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         focusedErrorBorder:
                                                                             OutlineInputBorder(
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Color(0xFFF6F6F9),
                                                                             width:
@@ -465,7 +463,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -508,7 +506,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           32.0,
@@ -522,7 +520,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                     MainAxisAlignment
                                                                         .center,
                                                                 children: [
-                                                                  Container(
+                                                                  SizedBox(
                                                                     width: MediaQuery.sizeOf(context)
                                                                             .width *
                                                                         0.7,
@@ -546,7 +544,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                             .bodySmall
                                                                             .override(
                                                                               fontFamily: 'Poppins',
-                                                                              color: Color(0xFFCACACA),
+                                                                              color: const Color(0xFFCACACA),
                                                                               letterSpacing: 0.0,
                                                                             ),
                                                                         enabledBorder:
@@ -631,7 +629,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -674,7 +672,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           14.0,
@@ -729,7 +727,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   12.0,
@@ -748,12 +746,8 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                               builder:
                                                                   (context) {
                                                                 if ((FFAppState().imagesList ==
-                                                                            null ||
-                                                                        FFAppState().imagesList ==
                                                                             '') &&
                                                                     (FFAppState().uploadFromGallery ==
-                                                                            null ||
-                                                                        FFAppState().uploadFromGallery ==
                                                                             '')) {
                                                                   return InkWell(
                                                                     splashColor:
@@ -794,7 +788,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                               onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                               child: Padding(
                                                                                 padding: MediaQuery.viewInsetsOf(context),
-                                                                                child: PhotoUploadWidget(),
+                                                                                child: const PhotoUploadWidget(),
                                                                               ),
                                                                             ),
                                                                           );
@@ -823,7 +817,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                               ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -880,7 +874,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                               onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                               child: Padding(
                                                                                 padding: MediaQuery.viewInsetsOf(context),
-                                                                                child: PhotoUploadWidget(),
+                                                                                child: const PhotoUploadWidget(),
                                                                               ),
                                                                             ),
                                                                           );
@@ -909,7 +903,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                               ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -936,12 +930,9 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                               children: [
                                                                 if (FFAppState()
                                                                             .imagesList !=
-                                                                        null &&
-                                                                    FFAppState()
-                                                                            .imagesList !=
                                                                         '')
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             16.0,
@@ -980,7 +971,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   32.0,
@@ -1034,16 +1025,16 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                 return WebViewAware(
                                                                   child:
                                                                       AlertDialog(
-                                                                    title: Text(
+                                                                    title: const Text(
                                                                         'Maravilha!'),
-                                                                    content: Text(
+                                                                    content: const Text(
                                                                         'Oferta criada com sucesso!'),
                                                                     actions: [
                                                                       TextButton(
                                                                         onPressed:
                                                                             () =>
                                                                                 Navigator.pop(alertDialogContext),
-                                                                        child: Text(
+                                                                        child: const Text(
                                                                             'Ok'),
                                                                       ),
                                                                     ],
@@ -1077,16 +1068,16 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                 return WebViewAware(
                                                                   child:
                                                                       AlertDialog(
-                                                                    title: Text(
+                                                                    title: const Text(
                                                                         'Aviso!'),
-                                                                    content: Text(
+                                                                    content: const Text(
                                                                         'Oferta cadastrada sem imagem.'),
                                                                     actions: [
                                                                       TextButton(
                                                                         onPressed:
                                                                             () =>
                                                                                 Navigator.pop(alertDialogContext),
-                                                                        child: Text(
+                                                                        child: const Text(
                                                                             'Ok'),
                                                                       ),
                                                                     ],
@@ -1123,14 +1114,14 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                           width: 160.0,
                                                           height: 60.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1152,7 +1143,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                                         0.0,
                                                                   ),
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Colors
                                                                 .transparent,
                                                             width: 1.0,
@@ -1169,7 +1160,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 18.0, 0.0, 28.0),
                                               child: FFButtonWidget(
@@ -1184,11 +1175,11 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 160.0,
                                                   height: 60.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -1202,7 +1193,7 @@ class _NewOfferPageWidgetState extends State<NewOfferPageWidget> {
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),

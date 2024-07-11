@@ -1,15 +1,8 @@
 import '/backend/api_requests/api_calls.dart';
-import '/components/photo_upload_widget.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'new_offer_page_widget.dart' show NewOfferPageWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:provider/provider.dart';
-import 'package:webviewx_plus/webviewx_plus.dart';
 
 class NewOfferPageModel extends FlutterFlowModel<NewOfferPageWidget> {
   ///  State fields for stateful widgets in this page.
@@ -26,7 +19,7 @@ class NewOfferPageModel extends FlutterFlowModel<NewOfferPageWidget> {
       return 'Digite o nome do cliente';
     }
 
-    if (val.length < 1) {
+    if (val.isEmpty) {
       return 'Requires at least 1 characters.';
     }
 
@@ -44,7 +37,7 @@ class NewOfferPageModel extends FlutterFlowModel<NewOfferPageWidget> {
       return 'Digite o preço do produto';
     }
 
-    if (val.length < 1) {
+    if (val.isEmpty) {
       return 'Requires at least 1 characters.';
     }
 

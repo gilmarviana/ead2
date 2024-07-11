@@ -1,9 +1,7 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'training_page_model.dart';
@@ -60,7 +58,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -68,7 +66,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 2.0,
               )
@@ -78,7 +76,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
               return SafeArea(
                 top: false,
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 53.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 53.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -96,7 +94,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       28.0, 16.0, 28.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -146,7 +144,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       28.0, 10.0, 28.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -186,7 +184,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       28.0, 10.0, 28.0, 22.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -260,7 +258,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(28.0, 0.0, 28.0,
                                                           20.0),
                                                   child: Row(
@@ -291,7 +289,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -319,7 +317,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -397,12 +395,12 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                                                           return WebViewAware(
                                                                             child:
                                                                                 AlertDialog(
-                                                                              title: Text('Erro!'),
+                                                                              title: const Text('Erro!'),
                                                                               content: Text((_model.apiResultmbq?.jsonBody ?? '').toString()),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                  child: Text('Ok'),
+                                                                                  child: const Text('Ok'),
                                                                                 ),
                                                                               ],
                                                                             ),
@@ -427,7 +425,7 @@ class _TrainingPageWidgetState extends State<TrainingPageWidget> {
                                                                               context)
                                                                           .alternate,
                                                                       borderRadius:
-                                                                          BorderRadius
+                                                                          const BorderRadius
                                                                               .only(
                                                                         bottomLeft:
                                                                             Radius.circular(12.0),

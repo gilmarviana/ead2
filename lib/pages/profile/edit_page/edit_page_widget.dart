@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'edit_page_model.dart';
@@ -71,7 +70,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -79,7 +78,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -107,7 +106,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 28.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -133,7 +132,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 204.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -141,13 +140,13 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                       height:
                                           MediaQuery.sizeOf(context).height *
                                               1.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: SingleChildScrollView(
@@ -179,7 +178,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   32.0,
@@ -209,13 +208,13 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x7E463583),
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 enabledBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -223,7 +222,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -234,7 +233,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -242,7 +241,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -253,7 +252,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 errorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -261,7 +260,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -272,7 +271,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedErrorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -280,7 +279,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -297,7 +296,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Poppins',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0x7E463583),
                                                                     letterSpacing:
                                                                         0.0,
@@ -323,7 +322,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: SingleChildScrollView(
@@ -355,7 +354,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   32.0,
@@ -385,13 +384,13 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x7E463583),
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 enabledBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -399,7 +398,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -410,7 +409,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -418,7 +417,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -429,7 +428,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 errorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -437,7 +436,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -448,7 +447,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedErrorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -456,7 +455,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -473,7 +472,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Poppins',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0x7E463583),
                                                                     letterSpacing:
                                                                         0.0,
@@ -499,7 +498,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: SingleChildScrollView(
@@ -531,7 +530,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   32.0,
@@ -563,13 +562,13 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
-                                                                      color: Color(
+                                                                      color: const Color(
                                                                           0x7E463583),
                                                                       letterSpacing:
                                                                           0.0,
                                                                     ),
                                                                 enabledBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -577,7 +576,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -588,7 +587,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -596,7 +595,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -607,7 +606,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 errorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -615,7 +614,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -626,7 +625,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   ),
                                                                 ),
                                                                 focusedErrorBorder:
-                                                                    UnderlineInputBorder(
+                                                                    const UnderlineInputBorder(
                                                                   borderSide:
                                                                       BorderSide(
                                                                     color: Color(
@@ -634,7 +633,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     width: 1.0,
                                                                   ),
                                                                   borderRadius:
-                                                                      const BorderRadius
+                                                                      BorderRadius
                                                                           .only(
                                                                     topLeft: Radius
                                                                         .circular(
@@ -651,7 +650,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                   .override(
                                                                     fontFamily:
                                                                         'Poppins',
-                                                                    color: Color(
+                                                                    color: const Color(
                                                                         0x0004A24C),
                                                                     letterSpacing:
                                                                         0.0,
@@ -677,7 +676,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: SingleChildScrollView(
@@ -709,7 +708,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   32.0,
@@ -768,12 +767,12 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 32.0, 0.0, 0.0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
-                                                  var _shouldSetState = false;
+                                                  var shouldSetState = false;
                                                   _model.apiResult45x =
                                                       await BAppEuVendoGroup
                                                           .updateUserBCall
@@ -785,7 +784,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     id: FFAppState().userId,
                                                   );
 
-                                                  _shouldSetState = true;
+                                                  shouldSetState = true;
                                                   if ((_model.apiResult45x
                                                           ?.succeeded ??
                                                       true)) {
@@ -795,9 +794,9 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                           (alertDialogContext) {
                                                         return WebViewAware(
                                                           child: AlertDialog(
-                                                            title: Text(
+                                                            title: const Text(
                                                                 'Tudo certo!'),
-                                                            content: Text(
+                                                            content: const Text(
                                                                 'Todos os dados foram atualizados.'),
                                                             actions: [
                                                               TextButton(
@@ -805,7 +804,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     Navigator.pop(
                                                                         alertDialogContext),
                                                                 child:
-                                                                    Text('Ok'),
+                                                                    const Text('Ok'),
                                                               ),
                                                             ],
                                                           ),
@@ -819,7 +818,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                       id: FFAppState().userId,
                                                     );
 
-                                                    _shouldSetState = true;
+                                                    shouldSetState = true;
                                                     if ((_model
                                                             .getUserResultsFromUpdate
                                                             ?.succeeded ??
@@ -842,8 +841,9 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                       )!;
                                                       setState(() {});
                                                     } else {
-                                                      if (_shouldSetState)
+                                                      if (shouldSetState) {
                                                         setState(() {});
+                                                      }
                                                       return;
                                                     }
 
@@ -856,7 +856,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                           (alertDialogContext) {
                                                         return WebViewAware(
                                                           child: AlertDialog(
-                                                            title: Text(
+                                                            title: const Text(
                                                                 'Ops! Algo deu errado.'),
                                                             content: Text((_model
                                                                         .apiResult45x
@@ -869,7 +869,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                                     Navigator.pop(
                                                                         alertDialogContext),
                                                                 child:
-                                                                    Text('Ok'),
+                                                                    const Text('Ok'),
                                                               ),
                                                             ],
                                                           ),
@@ -878,18 +878,19 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                     );
                                                   }
 
-                                                  if (_shouldSetState)
+                                                  if (shouldSetState) {
                                                     setState(() {});
+                                                  }
                                                 },
                                                 text: 'Concluir',
                                                 options: FFButtonOptions(
                                                   width: 180.0,
                                                   height: 60.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -903,7 +904,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),
@@ -914,7 +915,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 16.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -925,11 +926,11 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                 options: FFButtonOptions(
                                                   width: 140.0,
                                                   height: 50.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -943,7 +944,7 @@ class _EditPageWidgetState extends State<EditPageWidget> {
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
-                                                  borderSide: BorderSide(
+                                                  borderSide: const BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),

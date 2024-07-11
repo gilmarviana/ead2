@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/flutter_flow_youtube_player.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'current_class_model.dart';
@@ -62,7 +61,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                       FlutterFlowTheme.of(context).secondaryBackground,
                   automaticallyImplyLeading: false,
                   title: Align(
-                    alignment: AlignmentDirectional(0.0, 0.3),
+                    alignment: const AlignmentDirectional(0.0, 0.3),
                     child: Image.asset(
                       'assets/images/Grupo-32.png',
                       width: 100.0,
@@ -70,7 +69,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  actions: [],
+                  actions: const [],
                   centerTitle: true,
                   elevation: 2.0,
                 )
@@ -117,10 +116,9 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    if (FFAppState().classesUrl != null &&
-                                        FFAppState().classesUrl != '')
+                                    if (FFAppState().classesUrl != '')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             28.0, 16.0, 28.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -140,15 +138,12 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                           6.0),
                                                 ),
                                                 child: Visibility(
-                                                  visible: FFAppState()
-                                                              .classesUrl !=
-                                                          null &&
-                                                      FFAppState().classesUrl !=
+                                                  visible: FFAppState().classesUrl !=
                                                           '',
                                                   child:
                                                       FlutterFlowYoutubePlayer(
                                                     url:
-                                                        '${FFAppState().classesUrl}',
+                                                        FFAppState().classesUrl,
                                                     autoPlay: false,
                                                     looping: false,
                                                     mute: false,
@@ -162,7 +157,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                         ),
                                       ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           28.0, 14.0, 28.0, 16.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -223,7 +218,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                   CrossAxisAlignment.center,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(28.0, 0.0, 28.0,
                                                           20.0),
                                                   child: Row(
@@ -273,7 +268,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsets
+                                                                  const EdgeInsets
                                                                       .all(6.0),
                                                               child: Row(
                                                                 mainAxisSize:
@@ -317,7 +312,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                                             MainAxisSize.min,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 8.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -340,7 +335,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           14.0,
                                                                           0.0,
                                                                           0.0,
@@ -429,12 +424,12 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                                                           builder: (alertDialogContext) {
                                                                                             return WebViewAware(
                                                                                               child: AlertDialog(
-                                                                                                title: Text('Error!'),
+                                                                                                title: const Text('Error!'),
                                                                                                 content: Text((_model.apiResultlpd?.jsonBody ?? '').toString()),
                                                                                                 actions: [
                                                                                                   TextButton(
                                                                                                     onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                                    child: Text('Ok'),
+                                                                                                    child: const Text('Ok'),
                                                                                                   ),
                                                                                                 ],
                                                                                               ),
@@ -472,12 +467,12 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                                                           builder: (alertDialogContext) {
                                                                                             return WebViewAware(
                                                                                               child: AlertDialog(
-                                                                                                title: Text('Error'),
+                                                                                                title: const Text('Error'),
                                                                                                 content: Text((_model.apiResultwt8?.jsonBody ?? '').toString()),
                                                                                                 actions: [
                                                                                                   TextButton(
                                                                                                     onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                                    child: Text('Ok'),
+                                                                                                    child: const Text('Ok'),
                                                                                                   ),
                                                                                                 ],
                                                                                               ),
@@ -551,7 +546,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                             if (FFAppState().isCertificado ==
                                                 true)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 12.0),
                                                 child: FFButtonWidget(
@@ -564,11 +559,11 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                     width: 200.0,
                                                     height: 60.0,
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 12.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -583,7 +578,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -672,9 +667,9 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                     width: 200.0,
                                                     height: 60.0,
                                                     padding:
-                                                        EdgeInsets.all(0.0),
+                                                        const EdgeInsets.all(0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
@@ -689,7 +684,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                           letterSpacing: 0.0,
                                                         ),
                                                     elevation: 3.0,
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -701,7 +696,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                                 context)
                                                             .accent3,
                                                     disabledTextColor:
-                                                        Color(0x86000000),
+                                                        const Color(0x86000000),
                                                   ),
                                                 );
                                               },
@@ -711,7 +706,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                       },
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 0.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -721,10 +716,10 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                         options: FFButtonOptions(
                                           height: 40.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
@@ -737,7 +732,7 @@ class _CurrentClassWidgetState extends State<CurrentClassWidget> {
                                                     letterSpacing: 0.0,
                                                   ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),

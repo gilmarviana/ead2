@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'forgot_password_model.dart';
 export 'forgot_password_model.dart';
@@ -55,7 +53,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
               Expanded(
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.rectangle,
                   ),
@@ -68,7 +66,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 28.0, 0.0, 28.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -99,7 +97,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 16.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -122,7 +120,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 16.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -130,7 +128,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         32.0, 0.0, 32.0, 0.0),
                                     child: TextFormField(
                                       controller: _model.textController,
@@ -143,7 +141,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                             .bodySmall
                                             .override(
                                               fontFamily: 'Poppins',
-                                              color: Color(0xFF463583),
+                                              color: const Color(0xFF463583),
                                               letterSpacing: 0.0,
                                             ),
                                         enabledBorder: OutlineInputBorder(
@@ -165,7 +163,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -173,7 +171,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 2.0,
                                           ),
@@ -185,7 +183,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Poppins',
-                                            color: Color(0xFF463583),
+                                            color: const Color(0xFF463583),
                                             letterSpacing: 0.0,
                                           ),
                                       validator: _model.textControllerValidator
@@ -197,7 +195,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 8.0, 32.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -220,15 +218,15 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                           builder: (alertDialogContext) {
                                             return WebViewAware(
                                               child: AlertDialog(
-                                                title: Text('Tudo certo!'),
-                                                content: Text(
+                                                title: const Text('Tudo certo!'),
+                                                content: const Text(
                                                     'Um link foi encaminhado para o e-mail digitado acima, para que você possa redefinir sua senha.'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               ),
@@ -242,15 +240,15 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                             return WebViewAware(
                                               child: AlertDialog(
                                                 title:
-                                                    Text('E-mail incorreto.'),
-                                                content: Text(
+                                                    const Text('E-mail incorreto.'),
+                                                content: const Text(
                                                     'Tente novamente em alguns instantes ou entre em contato com o suporte do app.'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               ),
@@ -265,10 +263,10 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 45.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -279,7 +277,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),
@@ -291,7 +289,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 8.0, 32.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -306,10 +304,10 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 45.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context)
                                           .alternate,
@@ -320,7 +318,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                             color: Colors.white,
                                             letterSpacing: 0.0,
                                           ),
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),

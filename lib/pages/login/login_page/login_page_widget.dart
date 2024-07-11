@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'login_page_model.dart';
@@ -60,7 +59,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
               Expanded(
                 child: Container(
                   height: MediaQuery.sizeOf(context).height * 1.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.rectangle,
                   ),
@@ -78,7 +77,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     28.0, 0.0, 28.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -87,7 +86,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 32.0, 0.0, 0.0),
                                         child: Image.asset(
                                           'assets/images/logo.PNG',
@@ -105,7 +104,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 22.0, 0.0, 0.0),
                                     child: Image.asset(
                                       'assets/images/Grupo-32.png',
@@ -117,7 +116,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -139,7 +138,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -147,7 +146,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             32.0, 0.0, 32.0, 0.0),
                                         child: TextFormField(
                                           controller: _model.textController1,
@@ -161,7 +160,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                     .bodySmall
                                                     .override(
                                                       fontFamily: 'Poppins',
-                                                      color: Color(0xFF463583),
+                                                      color: const Color(0xFF463583),
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -210,7 +209,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Poppins',
-                                                color: Color(0xFF463583),
+                                                color: const Color(0xFF463583),
                                                 letterSpacing: 0.0,
                                               ),
                                           validator: _model
@@ -223,7 +222,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -231,7 +230,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             32.0, 0.0, 32.0, 0.0),
                                         child: TextFormField(
                                           controller: _model.textController2,
@@ -246,7 +245,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                     .bodySmall
                                                     .override(
                                                       fontFamily: 'Poppins',
-                                                      color: Color(0xFF463583),
+                                                      color: const Color(0xFF463583),
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -303,7 +302,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                     ? Icons.visibility_outlined
                                                     : Icons
                                                         .visibility_off_outlined,
-                                                color: Color(0xFF463583),
+                                                color: const Color(0xFF463583),
                                                 size: 16.0,
                                               ),
                                             ),
@@ -312,7 +311,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Poppins',
-                                                color: Color(0xFF463583),
+                                                color: const Color(0xFF463583),
                                                 letterSpacing: 0.0,
                                               ),
                                           validator: _model
@@ -325,7 +324,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     32.0, 8.0, 32.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -334,7 +333,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     Expanded(
                                       child: FFButtonWidget(
                                         onPressed: () async {
-                                          var _shouldSetState = false;
+                                          var shouldSetState = false;
                                           _model.apiResultb2a =
                                               await AuthLoginCall.call(
                                             email: _model.textController1.text,
@@ -342,7 +341,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                 _model.textController2.text,
                                           );
 
-                                          _shouldSetState = true;
+                                          shouldSetState = true;
                                           if ((_model.apiResultb2a?.succeeded ??
                                               true)) {
                                             FFAppState().tokenAPI =
@@ -363,7 +362,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               id: FFAppState().userId,
                                             );
 
-                                            _shouldSetState = true;
+                                            shouldSetState = true;
                                             FFAppState().userName =
                                                 BAppEuVendoGroup.getUsersBCall
                                                     .userName(
@@ -394,7 +393,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               'lojasPage',
                                               extra: <String, dynamic>{
                                                 kTransitionInfoKey:
-                                                    TransitionInfo(
+                                                    const TransitionInfo(
                                                   hasTransition: true,
                                                   transitionType:
                                                       PageTransitionType.fade,
@@ -404,8 +403,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               },
                                             );
 
-                                            if (_shouldSetState)
+                                            if (shouldSetState) {
                                               setState(() {});
+                                            }
                                             return;
                                           } else {
                                             await showDialog(
@@ -413,37 +413,38 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                               builder: (alertDialogContext) {
                                                 return WebViewAware(
                                                   child: AlertDialog(
-                                                    title: Text('Erro'),
-                                                    content: Text(
+                                                    title: const Text('Erro'),
+                                                    content: const Text(
                                                         'E-mail ou senha incorretos.'),
                                                     actions: [
                                                       TextButton(
                                                         onPressed: () =>
                                                             Navigator.pop(
                                                                 alertDialogContext),
-                                                        child: Text('Ok'),
+                                                        child: const Text('Ok'),
                                                       ),
                                                     ],
                                                   ),
                                                 );
                                               },
                                             );
-                                            if (_shouldSetState)
+                                            if (shouldSetState) {
                                               setState(() {});
+                                            }
                                             return;
                                           }
 
-                                          if (_shouldSetState) setState(() {});
+                                          if (shouldSetState) setState(() {});
                                         },
                                         text: 'Entrar',
                                         options: FFButtonOptions(
                                           width: 130.0,
                                           height: 45.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
@@ -455,7 +456,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                     color: Colors.white,
                                                     letterSpacing: 0.0,
                                                   ),
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),
@@ -471,7 +472,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 32.0, 0.0, 32.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -490,7 +491,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       context.pushNamed(
                                         'forgotPassword',
                                         extra: <String, dynamic>{
-                                          kTransitionInfoKey: TransitionInfo(
+                                          kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
                                             transitionType:
                                                 PageTransitionType.fade,
@@ -526,7 +527,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       context.pushNamed(
                                         'forgotPassword',
                                         extra: <String, dynamic>{
-                                          kTransitionInfoKey: TransitionInfo(
+                                          kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
                                             transitionType:
                                                 PageTransitionType.fade,

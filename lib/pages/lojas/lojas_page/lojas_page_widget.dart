@@ -1,9 +1,7 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'lojas_page_model.dart';
 export 'lojas_page_model.dart';
@@ -59,7 +57,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -67,7 +65,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -77,8 +75,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
               return SafeArea(
                 top: false,
                 child: Visibility(
-                  visible: FFAppState().tokenAPI != null &&
-                      FFAppState().tokenAPI != '',
+                  visible: FFAppState().tokenAPI != '',
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -96,7 +93,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       28.0, 16.0, 28.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -109,7 +106,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(4.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Lojas cadastradas',
@@ -191,7 +188,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                                             final lojaResultsItem =
                                                 lojaResults[lojaResultsIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       28.0, 16.0, 28.0, 12.0),
                                               child: Row(
@@ -253,7 +250,7 @@ class _LojasPageWidgetState extends State<LojasPageWidget> {
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             5.0,
                                                                             0.0,

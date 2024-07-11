@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
@@ -65,7 +64,7 @@ class GetUsersBCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getUsersB',
-      apiUrl: '${baseUrl}/getUsers/${id}',
+      apiUrl: '$baseUrl/getUsers/$id',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -136,7 +135,7 @@ class GetOfferBCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getOfferB',
-      apiUrl: '${baseUrl}/getOffers',
+      apiUrl: '$baseUrl/getOffers',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -250,7 +249,7 @@ class GetOfferByIdBCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getOfferByIdB',
-      apiUrl: '${baseUrl}/getofferbyid',
+      apiUrl: '$baseUrl/getofferbyid',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -329,19 +328,19 @@ class PostOfferBCall {
 
     final ffApiRequestBody = '''
 {
-  "loja": "${loja}",
-  "clientName": "${clientName}",
-  "numero_produto": "${clientPhone}",
-  "productPrice": ${productPrice},
-  "status_desconto": "${discountStatus}",
-  "user": "${userId}",
-  "clientPhone": "${clientPhone}",
-  "imagePNG": "${imagePNG}",
-  "avaliacaoAtendimento": "${avaliacaoCliente}"
+  "loja": "$loja",
+  "clientName": "$clientName",
+  "numero_produto": "$clientPhone",
+  "productPrice": $productPrice,
+  "status_desconto": "$discountStatus",
+  "user": "$userId",
+  "clientPhone": "$clientPhone",
+  "imagePNG": "$imagePNG",
+  "avaliacaoAtendimento": "$avaliacaoCliente"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'postOfferB',
-      apiUrl: '${baseUrl}/postnewoffer',
+      apiUrl: '$baseUrl/postnewoffer',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -370,13 +369,13 @@ class UpdateUserBCall {
 
     final ffApiRequestBody = '''
 {
-  "name": "${name}",
-  "userphone": "${userphone}",
-  "id": "${id}"
+  "name": "$name",
+  "userphone": "$userphone",
+  "id": "$id"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'updateUserB',
-      apiUrl: '${baseUrl}/updateuser',
+      apiUrl: '$baseUrl/updateuser',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -406,14 +405,14 @@ class UpdateOfferBCall {
 
     final ffApiRequestBody = '''
 {
-  "id": "${id}",
-  "discountvalue": ${discountvalue},
-  "discountstatus": "${discountstatus}",
-  "discounttype": "${discounttype}"
+  "id": "$id",
+  "discountvalue": $discountvalue,
+  "discountstatus": "$discountstatus",
+  "discounttype": "$discounttype"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'updateOfferB',
-      apiUrl: '${baseUrl}/updateCurrentOffer',
+      apiUrl: '$baseUrl/updateCurrentOffer',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -440,7 +439,7 @@ class GetLojasBCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getLojasB',
-      apiUrl: '${baseUrl}/getLojas',
+      apiUrl: '$baseUrl/getLojas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -483,7 +482,7 @@ class GetAllTrainingsCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getAllTrainings',
-      apiUrl: '${baseUrl}/getTraining',
+      apiUrl: '$baseUrl/getTraining',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -541,7 +540,7 @@ class GetTrainingByIdCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getTrainingById',
-      apiUrl: '${baseUrl}/getTrainingById',
+      apiUrl: '$baseUrl/getTrainingById',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -606,12 +605,12 @@ class CreateNewTrainingCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "id": "${id}"
+  "user": "$user",
+  "id": "$id"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'createNewTraining',
-      apiUrl: '${baseUrl}/postNewTrainingById',
+      apiUrl: '$baseUrl/postNewTrainingById',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -638,7 +637,7 @@ class GetCurrentTrainingCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getCurrentTraining',
-      apiUrl: '${baseUrl}/getCurrentTraining',
+      apiUrl: '$baseUrl/getCurrentTraining',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -694,7 +693,7 @@ class GetCurrentClassCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getCurrentClass',
-      apiUrl: '${baseUrl}/getCurrentClass',
+      apiUrl: '$baseUrl/getCurrentClass',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -769,13 +768,13 @@ class ConcluirAulaCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "aula": "${aula}",
-  "treinamento": "${treinamento}"
+  "user": "$user",
+  "aula": "$aula",
+  "treinamento": "$treinamento"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'concluirAula',
-      apiUrl: '${baseUrl}/concluirAula',
+      apiUrl: '$baseUrl/concluirAula',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -802,7 +801,7 @@ class ConcluirAulaConsultaCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'concluirAulaConsulta',
-      apiUrl: '${baseUrl}/concluirAulaConsulta',
+      apiUrl: '$baseUrl/concluirAulaConsulta',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -862,12 +861,12 @@ class UpdateStatusVendaCall {
 
     final ffApiRequestBody = '''
 {
-  "status_venda": "${statusVenda}",
-  "id": "${id}"
+  "status_venda": "$statusVenda",
+  "id": "$id"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'updateStatusVenda',
-      apiUrl: '${baseUrl}/updateStatusVenda',
+      apiUrl: '$baseUrl/updateStatusVenda',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -894,11 +893,11 @@ class ResetPasswordCall {
 
     final ffApiRequestBody = '''
 {
-  "email": "${email}"
+  "email": "$email"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'resetPassword',
-      apiUrl: '${baseUrl}/resetPassword',
+      apiUrl: '$baseUrl/resetPassword',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -928,14 +927,14 @@ class ChangePassordCall {
 
     final ffApiRequestBody = '''
 {
-  "novaSenha": "${novaSenha}",
-  "confirmacao": "${confirmacao}",
-  "id": "${id}",
-  "antigaSenha": "${antigaSenha}"
+  "novaSenha": "$novaSenha",
+  "confirmacao": "$confirmacao",
+  "id": "$id",
+  "antigaSenha": "$antigaSenha"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'changePassord',
-      apiUrl: '${baseUrl}/changePassword',
+      apiUrl: '$baseUrl/changePassword',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -963,12 +962,12 @@ class ChecarAulasCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "aula": "${aula}"
+  "user": "$user",
+  "aula": "$aula"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'checarAulas',
-      apiUrl: '${baseUrl}/checarAulas',
+      apiUrl: '$baseUrl/checarAulas',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -996,12 +995,12 @@ class CriarAulaAvulsaCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "aula": "${aula}"
+  "user": "$user",
+  "aula": "$aula"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'criarAulaAvulsa',
-      apiUrl: '${baseUrl}/criarAulaAvulsa',
+      apiUrl: '$baseUrl/criarAulaAvulsa',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1029,12 +1028,12 @@ class DeletarAulaCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "aula": "${aula}"
+  "user": "$user",
+  "aula": "$aula"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'deletarAula',
-      apiUrl: '${baseUrl}/deletarAula',
+      apiUrl: '$baseUrl/deletarAula',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1062,7 +1061,7 @@ class GetAulaUsuarioCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getAulaUsuario',
-      apiUrl: '${baseUrl}/getAulaUsuario',
+      apiUrl: '$baseUrl/getAulaUsuario',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1096,7 +1095,7 @@ class GetPerguntasCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'GetPerguntas',
-      apiUrl: '${baseUrl}/GetPerguntas',
+      apiUrl: '$baseUrl/GetPerguntas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1151,7 +1150,7 @@ class GetAlternativasCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'getAlternativas',
-      apiUrl: '${baseUrl}/GetAlternativas',
+      apiUrl: '$baseUrl/GetAlternativas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1213,7 +1212,7 @@ class RetornaPerguntasCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'retornaPerguntas',
-      apiUrl: '${baseUrl}/retornaPerguntas',
+      apiUrl: '$baseUrl/retornaPerguntas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1272,7 +1271,7 @@ class RetornaAlternativasCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'retornaAlternativas',
-      apiUrl: '${baseUrl}/retornaAlternativas',
+      apiUrl: '$baseUrl/retornaAlternativas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1328,14 +1327,14 @@ class AcertarAvaliacaoCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "treinamento": "${treinamento}",
-  "pergunta": "${pergunta}",
-  "alternativaEscolhida": "${alternativaEscolhida}"
+  "user": "$user",
+  "treinamento": "$treinamento",
+  "pergunta": "$pergunta",
+  "alternativaEscolhida": "$alternativaEscolhida"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'acertarAvaliacao',
-      apiUrl: '${baseUrl}/acertarAvaliacao',
+      apiUrl: '$baseUrl/acertarAvaliacao',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1365,14 +1364,14 @@ class ErrarAvaliacaoCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "treinamento": "${treinamento}",
-  "pergunta": "${pergunta}",
-  "alternativaEscolhida": "${alternativaEscolhida}"
+  "user": "$user",
+  "treinamento": "$treinamento",
+  "pergunta": "$pergunta",
+  "alternativaEscolhida": "$alternativaEscolhida"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'errarAvaliacao',
-      apiUrl: '${baseUrl}/errarAvaliacao',
+      apiUrl: '$baseUrl/errarAvaliacao',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1400,7 +1399,7 @@ class RetornarRespostasCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'retornarRespostas',
-      apiUrl: '${baseUrl}/retornarRespostas',
+      apiUrl: '$baseUrl/retornarRespostas',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1434,12 +1433,12 @@ class ConcluirAvaliacaoCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "treinamento": "${treinamento}"
+  "user": "$user",
+  "treinamento": "$treinamento"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'concluirAvaliacao',
-      apiUrl: '${baseUrl}/concluirAvaliacao',
+      apiUrl: '$baseUrl/concluirAvaliacao',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1467,12 +1466,12 @@ class ResetarAvaliacaoCall {
 
     final ffApiRequestBody = '''
 {
-  "user": "${user}",
-  "treinamento": "${treinametno}"
+  "user": "$user",
+  "treinamento": "$treinametno"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'resetarAvaliacao',
-      apiUrl: '${baseUrl}/resetarAvaliacao',
+      apiUrl: '$baseUrl/resetarAvaliacao',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1500,7 +1499,7 @@ class RetornarAprovadoCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'retornarAprovado',
-      apiUrl: '${baseUrl}/retornarAprovado',
+      apiUrl: '$baseUrl/retornarAprovado',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1533,11 +1532,11 @@ class TestePlugginCall {
 
     final ffApiRequestBody = '''
 {
-  "oferta": "${oferta}"
+  "oferta": "$oferta"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'testePluggin',
-      apiUrl: '${baseUrl}/testePluggin',
+      apiUrl: '$baseUrl/testePluggin',
       callType: ApiCallType.POST,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1565,7 +1564,7 @@ class RetornarProdutosIndividualmenteCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'retornarProdutosIndividualmente',
-      apiUrl: '${baseUrl}/retornoSomaDePrecos',
+      apiUrl: '$baseUrl/retornoSomaDePrecos',
       callType: ApiCallType.GET,
       headers: {
         'Authorization': 'Bearer ec4dcd7089a06c130a325c5267575123',
@@ -1607,8 +1606,8 @@ class AuthLoginCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "email": "${email}",
-  "password": "${password}"
+  "email": "$email",
+  "password": "$password"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'authLogin',

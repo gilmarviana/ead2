@@ -2,9 +2,7 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'my_training_page_model.dart';
 export 'my_training_page_model.dart';
@@ -60,7 +58,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -68,7 +66,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 2.0,
               )
@@ -116,7 +114,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         28.0, 10.0, 28.0, 12.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -168,7 +166,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         28.0, 16.0, 28.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -209,7 +207,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         28.0, 10.0, 28.0, 22.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -236,7 +234,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 22.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -319,7 +317,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                           final chartGetAllTrainingsResponse =
                                                               snapshot.data!;
 
-                                                          return Container(
+                                                          return SizedBox(
                                                             width:
                                                                 double.infinity,
                                                             height: 60.0,
@@ -336,7 +334,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                                   FlutterFlowTheme.of(
                                                                           context)
                                                                       .error,
-                                                                  Color(
+                                                                  const Color(
                                                                       0xFFFEB800),
                                                                   FlutterFlowTheme.of(
                                                                           context)
@@ -398,7 +396,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                   MainAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 10.0, 0.0, 0.0),
                                                   child: Row(
@@ -410,7 +408,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     3.0,
@@ -427,7 +425,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     5.0,
                                                                     0.0,
@@ -441,7 +439,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 letterSpacing:
                                                                     0.0,
@@ -452,7 +450,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 10.0, 0.0, 0.0),
                                                   child: Row(
@@ -464,7 +462,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     3.0,
@@ -481,7 +479,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     5.0,
                                                                     0.0,
@@ -495,7 +493,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 letterSpacing:
                                                                     0.0,
@@ -506,7 +504,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 10.0, 0.0, 0.0),
                                                   child: Row(
@@ -516,7 +514,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Padding(
+                                                      const Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
@@ -534,7 +532,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     5.0,
                                                                     0.0,
@@ -548,7 +546,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 letterSpacing:
                                                                     0.0,
@@ -559,7 +557,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 8.0, 0.0, 0.0),
                                                   child: Row(
@@ -571,7 +569,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     5.0,
                                                                     0.0,
@@ -585,7 +583,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 fontSize: 10.0,
                                                                 letterSpacing:
@@ -597,7 +595,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 2.0, 0.0, 0.0),
                                                   child: Row(
@@ -609,7 +607,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     5.0,
                                                                     0.0,
@@ -630,7 +628,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 fontSize: 10.0,
                                                                 letterSpacing:
@@ -640,7 +638,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     3.0,
                                                                     0.0,
@@ -654,7 +652,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Poppins',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF212121),
                                                                 fontSize: 10.0,
                                                                 letterSpacing:
@@ -673,7 +671,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 170.0),
                                     child: Builder(
                                       builder: (context) {
@@ -698,7 +696,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                 userTrainings[
                                                     userTrainingsIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       28.0, 0.0, 28.0, 20.0),
                                               child: Row(
@@ -761,7 +759,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -789,7 +787,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -909,7 +907,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                                       height:
                                                                           100.0,
                                                                       decoration:
-                                                                          BoxDecoration(
+                                                                          const BoxDecoration(
                                                                         color: Color(
                                                                             0xFFFEB800),
                                                                         borderRadius:
@@ -1027,7 +1025,7 @@ class _MyTrainingPageWidgetState extends State<MyTrainingPageWidget> {
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .tertiary,
                                                                         borderRadius:
-                                                                            BorderRadius.only(
+                                                                            const BorderRadius.only(
                                                                           bottomLeft:
                                                                               Radius.circular(12.0),
                                                                           bottomRight:

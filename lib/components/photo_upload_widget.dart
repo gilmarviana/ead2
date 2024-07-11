@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'photo_upload_model.dart';
@@ -47,7 +46,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
       height: 270.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 5.0,
             color: Color(0x3B1D2429),
@@ -57,7 +56,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
             ),
           )
         ],
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(16.0),
@@ -65,7 +64,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -76,7 +75,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                 await actions.uploadFromCamera(
                   context,
                 );
-                await actions.base64ToPgn2(
+                actions.base64ToPgn2(
                   FFAppState().uploadFromGallery,
                 );
                 FFAppState().imagesList = FFAppState().imagesList;
@@ -86,12 +85,12 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                   builder: (alertDialogContext) {
                     return WebViewAware(
                       child: AlertDialog(
-                        title: Text('Foto carregada com sucesso!'),
-                        content: Text('A foto foi carregada com sucesso.'),
+                        title: const Text('Foto carregada com sucesso!'),
+                        content: const Text('A foto foi carregada com sucesso.'),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(alertDialogContext),
-                            child: Text('Ok'),
+                            child: const Text('Ok'),
                           ),
                         ],
                       ),
@@ -104,22 +103,22 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
               options: FFButtonOptions(
                 width: double.infinity,
                 height: 60.0,
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 color: FlutterFlowTheme.of(context).tertiary,
                 textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
                       fontFamily: 'Poppins',
                       letterSpacing: 0.0,
                     ),
                 elevation: 2.0,
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Colors.transparent,
                   width: 1.0,
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   FFAppState().uploadFromGallery = '';
@@ -127,7 +126,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                   await actions.uploadFromGallery(
                     context,
                   );
-                  await actions.base64ToPgn2(
+                  actions.base64ToPgn2(
                     FFAppState().uploadFromGallery,
                   );
                   FFAppState().imagesList = FFAppState().imagesList;
@@ -137,13 +136,13 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                     builder: (alertDialogContext) {
                       return WebViewAware(
                         child: AlertDialog(
-                          title: Text('Foto carregada com sucesso!'),
-                          content: Text('A foto foi carregada com sucesso.'),
+                          title: const Text('Foto carregada com sucesso!'),
+                          content: const Text('A foto foi carregada com sucesso.'),
                           actions: [
                             TextButton(
                               onPressed: () =>
                                   Navigator.pop(alertDialogContext),
-                              child: Text('Ok'),
+                              child: const Text('Ok'),
                             ),
                           ],
                         ),
@@ -156,16 +155,16 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                 options: FFButtonOptions(
                   width: double.infinity,
                   height: 60.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).success,
                   textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
                         fontFamily: 'Poppins',
                         letterSpacing: 0.0,
                       ),
                   elevation: 2.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                     width: 1.0,
                   ),
@@ -173,7 +172,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   context.pop();
@@ -182,9 +181,9 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                 options: FFButtonOptions(
                   width: 120.0,
                   height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).alternate,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Lexend Deca',
@@ -194,7 +193,7 @@ class _PhotoUploadWidgetState extends State<PhotoUploadWidget> {
                         fontWeight: FontWeight.normal,
                       ),
                   elevation: 0.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                     width: 0.0,
                   ),

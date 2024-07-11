@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'change_password_model.dart';
@@ -58,7 +57,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                 child: Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.rectangle,
                   ),
@@ -74,7 +73,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -96,7 +95,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -104,7 +103,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             32.0, 0.0, 32.0, 0.0),
                                         child: TextFormField(
                                           controller: _model.textController,
@@ -119,7 +118,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                     .bodySmall
                                                     .override(
                                                       fontFamily: 'Poppins',
-                                                      color: Color(0xFF463583),
+                                                      color: const Color(0xFF463583),
                                                       letterSpacing: 0.0,
                                                     ),
                                             enabledBorder: OutlineInputBorder(
@@ -133,7 +132,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                   BorderRadius.circular(8.0),
                                             ),
                                             focusedBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 2.0,
                                               ),
@@ -141,7 +140,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                   BorderRadius.circular(8.0),
                                             ),
                                             errorBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 2.0,
                                               ),
@@ -150,7 +149,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                             ),
                                             focusedErrorBorder:
                                                 OutlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 2.0,
                                               ),
@@ -181,7 +180,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Poppins',
-                                                color: Color(0xFF463583),
+                                                color: const Color(0xFF463583),
                                                 letterSpacing: 0.0,
                                               ),
                                           cursorColor:
@@ -199,7 +198,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 8.0, 32.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -207,7 +206,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                               children: [
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 12.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -225,15 +224,15 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                             builder: (alertDialogContext) {
                                               return WebViewAware(
                                                 child: AlertDialog(
-                                                  title: Text('Tudo certo!'),
-                                                  content: Text(
+                                                  title: const Text('Tudo certo!'),
+                                                  content: const Text(
                                                       'Um link foi encaminhado para seu e-mail para a alteração de senha.'),
                                                   actions: [
                                                     TextButton(
                                                       onPressed: () =>
                                                           Navigator.pop(
                                                               alertDialogContext),
-                                                      child: Text('Ok'),
+                                                      child: const Text('Ok'),
                                                     ),
                                                   ],
                                                 ),
@@ -248,10 +247,10 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                       options: FFButtonOptions(
                                         width: 130.0,
                                         height: 45.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
@@ -262,7 +261,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                               color: Colors.white,
                                               letterSpacing: 0.0,
                                             ),
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),

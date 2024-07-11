@@ -6,7 +6,6 @@ import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'avaliacao_model.dart';
@@ -63,7 +62,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -71,7 +70,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -119,13 +118,13 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       22.0, 0.0, 22.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -152,7 +151,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 28.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -177,7 +176,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -188,7 +187,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                               child: Container(
                                                 width: 100.0,
                                                 height: 100.0,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: AutoSizeText(
                                                   valueOrDefault<String>(
                                                     functions
@@ -226,7 +225,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       22.0, 0.0, 22.0, 42.0),
                                   child: FutureBuilder<ApiCallResponse>(
                                     future: BAppEuVendoGroup
@@ -325,7 +324,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -404,7 +403,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -483,7 +482,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -562,7 +561,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -659,14 +658,14 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                         .override(
                                                           fontFamily: 'Poppins',
                                                           color:
-                                                              Color(0xD1000000),
+                                                              const Color(0xD1000000),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 5.0, 0.0, 0.0),
                                                 child: FutureBuilder<
@@ -703,14 +702,11 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                     return FFButtonWidget(
                                                       onPressed: (FFAppState()
                                                                       .alternativaSelecionada ==
-                                                                  null ||
-                                                              FFAppState()
-                                                                      .alternativaSelecionada ==
                                                                   '')
                                                           ? null
                                                           : () async {
                                                               _model.retornoPerguntas =
-                                                                  await actions
+                                                                  actions
                                                                       .returnProximaPergunta(
                                                                 FFAppState()
                                                                     .perguntaAtual,
@@ -773,13 +769,13 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                                           child:
                                                                               AlertDialog(
                                                                             title:
-                                                                                Text('Ops!'),
+                                                                                const Text('Ops!'),
                                                                             content:
                                                                                 Text((_model.apiResultYess?.jsonBody ?? '').toString()),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           ),
@@ -829,13 +825,13 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                                           child:
                                                                               AlertDialog(
                                                                             title:
-                                                                                Text('Ops!'),
+                                                                                const Text('Ops!'),
                                                                             content:
                                                                                 Text((_model.apiResultsErrouu?.jsonBody ?? '').toString()),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           ),
@@ -894,13 +890,13 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                                           child:
                                                                               AlertDialog(
                                                                             title:
-                                                                                Text('Ops!'),
+                                                                                const Text('Ops!'),
                                                                             content:
                                                                                 Text((_model.apiResultYess?.jsonBody ?? '').toString()),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           ),
@@ -946,13 +942,13 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                                           child:
                                                                               AlertDialog(
                                                                             title:
-                                                                                Text('Ops!'),
+                                                                                const Text('Ops!'),
                                                                             content:
                                                                                 Text((_model.apiResultsErrouu?.jsonBody ?? '').toString()),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           ),
@@ -970,9 +966,9 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                         width: double.infinity,
                                                         height: 50.0,
                                                         padding:
-                                                            EdgeInsets.all(0.0),
+                                                            const EdgeInsets.all(0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -995,7 +991,7 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                                       0.0,
                                                                 ),
                                                         elevation: 3.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color: Colors
                                                               .transparent,
                                                           width: 1.0,
@@ -1004,9 +1000,9 @@ class _AvaliacaoWidgetState extends State<AvaliacaoWidget> {
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         disabledColor:
-                                                            Color(0xFF8365E0),
+                                                            const Color(0xFF8365E0),
                                                         disabledTextColor:
-                                                            Color(0x7AFFFFFF),
+                                                            const Color(0x7AFFFFFF),
                                                       ),
                                                     );
                                                   },

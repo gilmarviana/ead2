@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'client_page_model.dart';
 export 'client_page_model.dart';
@@ -72,7 +71,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                     FlutterFlowTheme.of(context).secondaryBackground,
                 automaticallyImplyLeading: false,
                 title: Align(
-                  alignment: AlignmentDirectional(0.0, 0.3),
+                  alignment: const AlignmentDirectional(0.0, 0.3),
                   child: Image.asset(
                     'assets/images/Grupo-32.png',
                     width: 100.0,
@@ -80,7 +79,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                     fit: BoxFit.contain,
                   ),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: true,
                 elevation: 3.0,
               )
@@ -114,7 +113,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 150.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -158,7 +157,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -197,7 +196,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -211,7 +210,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 MainAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
@@ -245,7 +244,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFFCACACA),
+                                                                              const Color(0xFFCACACA),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -265,7 +264,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -278,7 +277,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     errorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -291,7 +290,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedErrorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -330,7 +329,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -369,7 +368,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -383,7 +382,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 MainAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
@@ -418,7 +417,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFFCACACA),
+                                                                              const Color(0xFFCACACA),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -438,7 +437,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -451,7 +450,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     errorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -464,7 +463,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedErrorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -503,7 +502,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -542,7 +541,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -556,7 +555,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 MainAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
@@ -590,7 +589,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFFCACACA),
+                                                                              const Color(0xFFCACACA),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -610,7 +609,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -623,7 +622,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     errorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -636,7 +635,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedErrorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -675,7 +674,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -714,7 +713,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -756,7 +755,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -795,7 +794,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -809,7 +808,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 MainAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
@@ -843,7 +842,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFFCACACA),
+                                                                              const Color(0xFFCACACA),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -863,7 +862,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -876,7 +875,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     errorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -889,7 +888,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedErrorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -928,7 +927,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: SingleChildScrollView(
@@ -967,7 +966,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       32.0,
@@ -981,7 +980,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 MainAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 width: MediaQuery.sizeOf(
                                                                             context)
                                                                         .width *
@@ -1005,7 +1004,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                           fontFamily:
                                                                               'Poppins',
                                                                           color:
-                                                                              Color(0xFFCACACA),
+                                                                              const Color(0xFFCACACA),
                                                                           letterSpacing:
                                                                               0.0,
                                                                         ),
@@ -1025,7 +1024,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -1038,7 +1037,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     errorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -1051,7 +1050,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                     focusedErrorBorder:
                                                                         OutlineInputBorder(
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Color(
                                                                             0x00000000),
                                                                         width:
@@ -1092,7 +1091,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 32.0, 0.0, 0.0),
                                                   child: FFButtonWidget(
@@ -1106,14 +1105,14 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                       width: 230.0,
                                                       height: 60.0,
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -1135,7 +1134,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -1147,7 +1146,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 20.0, 0.0, 15.0),
                                                   child: FFButtonWidget(
@@ -1160,14 +1159,14 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                       width: 230.0,
                                                       height: 60.0,
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -1189,7 +1188,7 @@ class _ClientPageWidgetState extends State<ClientPageWidget> {
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
